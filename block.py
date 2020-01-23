@@ -11,11 +11,10 @@ class Block():
     #hash the block inorder to add it to the chain
     def hashBlock(self):
         key = hashlib.sha256()
-        key.update(str(self.index) +
-               str(self.timestamp) +
-               str(self.data) +
-               str(self.previous_hash).encode('utf-8'))
-
+        key.update(str(self.index).encode('utf-8'))
+        key.update(str(self.timestamp).encode('utf-8'))
+        key.update(str(self.data).encode('utf-8'))
+        key.update(str(self.previous_hash).encode('utf-8'))
         return key.hexdigest()
 
     def get_block(self):
