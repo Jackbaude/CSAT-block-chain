@@ -23,5 +23,5 @@ class Block():
 
 
 #test
-block = Block(0, time.time(), "john is fat", 0000)
+#block = Block(0, time.time(), "john is fat", 0000)
 #print(block.hashBlock())

@@ -33,6 +33,7 @@ class Chain():
         return (len(self.blocks))
 
 
+
 """
 chain = Chain()
 chain.add_block("money given to jack")
